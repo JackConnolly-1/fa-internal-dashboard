@@ -1,0 +1,21 @@
+<!-- @dsCard group="Brand" viewport="700x140" name="Horizontal Logo" subtitle="Lockup variants — horizontal layout" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: #fff; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; height: 140px; }
+  .cell { display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .cell.dark { background: var(--navy-900); }
+  img { max-width: 100%; max-height: 90px; object-fit: contain; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="cell"><img src="../assets/logos/variants/variant-3.png" alt="Horizontal Logo Light"></div>
+  <div class="cell dark"><img src="../assets/logos/variants/variant-3.png" alt="Horizontal Logo Dark" style="filter: brightness(10);"></div>
+</div>
+</body>
+</html>

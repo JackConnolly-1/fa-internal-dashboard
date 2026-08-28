@@ -1,0 +1,40 @@
+<!-- @dsCard group="Brand" viewport="700x300" name="Logo Variants" subtitle="Full color, one-color, mark-only" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .cell { display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+  .cell.dark { background: var(--navy-900); }
+  .cell.mid  { background: var(--navy-50); }
+  img { max-width: 100%; max-height: 120px; object-fit: contain; }
+  .label { font-size: 10px; color: var(--neutral-400); text-align: center; margin-top: 6px; }
+  .wrap { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="cell">
+    <div class="wrap"><img src="../assets/logos/logo-full-color.png" alt="Full Color Logo"><span class="label">Full Color (texture)</span></div>
+  </div>
+  <div class="cell mid">
+    <div class="wrap"><img src="../assets/logos/logo-no-texture-one-color.png" alt="One Color Logo"><span class="label">One Color — Clean</span></div>
+  </div>
+  <div class="cell dark">
+    <div class="wrap"><img src="../assets/logos/logo-white.png" alt="White Logo" style="filter: brightness(10);"><span class="label" style="color:rgba(255,255,255,0.5);">Reversed (white)</span></div>
+  </div>
+  <div class="cell mid">
+    <div class="wrap"><img src="../assets/logos/logo-fa-only.png" alt="FA Mark"><span class="label">FA Mark only</span></div>
+  </div>
+  <div class="cell">
+    <div class="wrap"><img src="../assets/logos/logo-type-only.png" alt="Type Only"><span class="label">Wordmark only</span></div>
+  </div>
+  <div class="cell dark">
+    <div class="wrap"><img src="../assets/logos/logo-fa-only.png" alt="FA Mark dark bg" style="filter:brightness(10);"><span class="label" style="color:rgba(255,255,255,0.5);">FA Mark — dark bg</span></div>
+  </div>
+</div>
+</body>
+</html>

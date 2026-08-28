@@ -1,0 +1,101 @@
+/* ─────────────────────────────────────────────────────────────
+   Frontier Angels — Color Tokens
+   Source: FA logo SVG (exact hex values extracted directly)
+   Primary: #0C2140 (navy) | Accent: #BB8956 (gold/bronze)
+───────────────────────────────────────────────────────────── */
+
+:root {
+
+  /* ── Navy Scale ── */
+  --navy-950: #060f1e;
+  --navy-900: #0C2140;   /* ← brand primary, exact from logo SVG */
+  --navy-800: #112c55;
+  --navy-700: #163769;
+  --navy-600: #1d4a88;
+  --navy-500: #255da5;
+  --navy-400: #4f7fbf;
+  --navy-300: #80a5d2;
+  --navy-200: #b4cae6;
+  --navy-100: #d9e6f3;
+  --navy-50:  #edf4fb;
+
+  /* ── Gold Scale ── */
+  --gold-950: #3d2609;
+  --gold-900: #5c3a10;
+  --gold-800: #7a4e18;
+  --gold-700: #9a6425;
+  --gold-600: #BB8956;   /* ← brand accent, exact from logo SVG */
+  --gold-500: #c99970;
+  --gold-400: #d6ad8e;
+  --gold-300: #e3c4ae;
+  --gold-200: #efd9ca;
+  --gold-100: #f7ede3;
+  --gold-50:  #fdf6f0;
+
+  /* ── Yellow (Fund 5 accent) ── */
+  --yellow-400: #f5c842;
+  --yellow-300: #f9d876;
+  --yellow-200: #fce8a8;
+
+  /* ── Neutral Scale ── */
+  --neutral-950: #0d0d0d;
+  --neutral-900: #1a1a1a;
+  --neutral-800: #2e2e2e;
+  --neutral-700: #454545;
+  --neutral-600: #5e5e5e;
+  --neutral-500: #787878;
+  --neutral-400: #969696;
+  --neutral-300: #b5b5b5;
+  --neutral-200: #d4d4d4;
+  --neutral-100: #ebebeb;
+  --neutral-50:  #f7f7f7;
+
+  /* ── White / Black ── */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* ─────────────────────────────────────────────────────────
+     Semantic Aliases
+  ───────────────────────────────────────────────────────── */
+
+  /* Brand */
+  --color-brand-primary:    var(--navy-900);
+  --color-brand-secondary:  var(--navy-700);
+  --color-brand-accent:     var(--gold-600);
+  --color-brand-accent-light: var(--gold-300);
+
+  /* Backgrounds */
+  --color-bg-page:          var(--white);
+  --color-bg-subtle:        var(--navy-50);
+  --color-bg-muted:         var(--navy-100);
+  --color-bg-dark:          var(--navy-900);
+  --color-bg-darker:        var(--navy-950);
+  --color-bg-accent:        var(--gold-600);
+
+  /* Text */
+  --color-text-primary:     var(--navy-900);
+  --color-text-secondary:   var(--navy-700);
+  --color-text-muted:       var(--navy-400);
+  --color-text-placeholder: var(--neutral-400);
+  --color-text-on-dark:     var(--white);
+  --color-text-on-accent:   var(--white);
+  --color-text-accent:      var(--gold-600);
+  --color-text-link:        var(--navy-600);
+  --color-text-link-hover:  var(--gold-600);
+
+  /* Borders */
+  --color-border:           var(--navy-100);
+  --color-border-strong:    var(--navy-300);
+  --color-border-accent:    var(--gold-600);
+
+  /* States */
+  --color-focus-ring:       var(--gold-600);
+  --color-hover-overlay:    rgba(12, 33, 64, 0.06);
+  --color-press-overlay:    rgba(12, 33, 64, 0.12);
+
+  /* Status */
+  --color-success:          #2a7d4f;
+  --color-warning:          #c97c1a;
+  --color-error:            #c0392b;
+  --color-info:             var(--navy-600);
+}

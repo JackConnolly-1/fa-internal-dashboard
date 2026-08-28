@@ -1,0 +1,28 @@
+<!-- @dsCard group="Colors" viewport="700x160" name="Semantic Colors" subtitle="Status + surface aliases" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 12px; background: #fff; font-family: var(--font-body); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .item { display: flex; flex-direction: column; gap: 4px; }
+  .dot { width: 36px; height: 36px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.08); }
+  .name { font-size: 10px; font-weight: 600; color: var(--navy-900); }
+  .val  { font-size: 9px; font-family: var(--font-mono); color: var(--neutral-500); }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="item"><div class="dot" style="background:var(--color-brand-primary);"></div><span class="name">Brand Primary</span><span class="val">--color-brand-primary</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-brand-accent);"></div><span class="name">Brand Accent</span><span class="val">--color-brand-accent</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-bg-subtle);border:1px solid #d9e6f3;"></div><span class="name">BG Subtle</span><span class="val">--color-bg-subtle</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-bg-dark);"></div><span class="name">BG Dark</span><span class="val">--color-bg-dark</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-success);"></div><span class="name">Success</span><span class="val">--color-success</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-warning);"></div><span class="name">Warning</span><span class="val">--color-warning</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-error);"></div><span class="name">Error</span><span class="val">--color-error</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-info);"></div><span class="name">Info</span><span class="val">--color-info</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* ─────────────────────────────────────────────────────────────
+   Frontier Angels — Typography Tokens
+───────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Font Families ── */
+  --font-display:  'Bitter', Georgia, 'Times New Roman', serif;
+  --font-body:     'Source Sans 3', system-ui, -apple-system, sans-serif;
+  --font-mono:     'Source Code Pro', 'Courier New', monospace;
+
+  /* ── Font Weights ── */
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-extrabold: 800;
+  --weight-black:     900;
+
+  /* ── Type Scale (display / heading) ── */
+  --text-display-2xl:   clamp(3rem,   5vw, 4.5rem);    /* 48–72px */
+  --text-display-xl:    clamp(2.25rem, 4vw, 3.5rem);   /* 36–56px */
+  --text-display-lg:    clamp(1.875rem,3vw, 2.75rem);  /* 30–44px */
+  --text-display-md:    clamp(1.5rem,  2.5vw, 2.25rem);/* 24–36px */
+  --text-display-sm:    1.5rem;                         /* 24px */
+
+  /* ── Type Scale (body) ── */
+  --text-xl:   1.25rem;   /* 20px */
+  --text-lg:   1.125rem;  /* 18px */
+  --text-base: 1rem;      /* 16px */
+  --text-sm:   0.875rem;  /* 14px */
+  --text-xs:   0.75rem;   /* 12px */
+  --text-xxs:  0.6875rem; /* 11px */
+
+  /* ── Line Heights ── */
+  --leading-none:    1;
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+  --leading-loose:   1.8;
+
+  /* ── Letter Spacing ── */
+  --tracking-tight:   -0.02em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.04em;
+  --tracking-wider:    0.08em;
+  --tracking-widest:   0.15em;
+
+  /* ── Semantic Aliases ── */
+  --font-heading:      var(--font-display);
+  --font-label:        var(--font-body);
+  --font-caption:      var(--font-body);
+
+  --text-heading-1:    var(--text-display-2xl);
+  --text-heading-2:    var(--text-display-xl);
+  --text-heading-3:    var(--text-display-lg);
+  --text-heading-4:    var(--text-display-md);
+  --text-heading-5:    var(--text-display-sm);
+  --text-body-lg:      var(--text-lg);
+  --text-body:         var(--text-base);
+  --text-body-sm:      var(--text-sm);
+  --text-label:        var(--text-sm);
+  --text-caption:      var(--text-xs);
+  --text-overline:     var(--text-xxs);
+}

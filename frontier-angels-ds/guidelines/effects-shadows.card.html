@@ -1,0 +1,26 @@
+<!-- @dsCard group="Spacing" viewport="700x130" name="Shadows" subtitle="--shadow-* token ramp" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 20px 24px; background: var(--neutral-50); font-family: var(--font-body); }
+  .row { display: flex; align-items: center; gap: 20px; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .box { width: 64px; height: 56px; background: #fff; border-radius: 6px; }
+  .val { font-size: 9px; font-family: var(--font-mono); color: var(--neutral-500); }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="item"><div class="box" style="box-shadow: var(--shadow-xs);"></div><span class="val">shadow-xs</span></div>
+  <div class="item"><div class="box" style="box-shadow: var(--shadow-sm);"></div><span class="val">shadow-sm</span></div>
+  <div class="item"><div class="box" style="box-shadow: var(--shadow-md);"></div><span class="val">shadow-md</span></div>
+  <div class="item"><div class="box" style="box-shadow: var(--shadow-lg);"></div><span class="val">shadow-lg</span></div>
+  <div class="item"><div class="box" style="box-shadow: var(--shadow-xl);"></div><span class="val">shadow-xl</span></div>
+  <div class="item"><div class="box" style="box-shadow: var(--shadow-gold);"></div><span class="val">shadow-gold</span></div>
+  <div class="item"><div class="box" style="box-shadow: var(--shadow-focus);"></div><span class="val">shadow-focus</span></div>
+</div>
+</body>
+</html>

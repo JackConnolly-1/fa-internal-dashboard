@@ -1,0 +1,35 @@
+<!-- @dsCard group="Colors" viewport="700x130" name="Brand Colors" subtitle="Primary navy + gold accent" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: #fff; font-family: var(--font-body); }
+  .row { display: flex; gap: 0; height: 80px; }
+  .swatch { flex: 1; display: flex; align-items: flex-end; padding: 8px 10px; }
+  .label { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; }
+  .meta { display: flex; gap: 16px; padding: 10px 12px 8px; }
+  .meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .meta-name { font-size: 11px; font-weight: 700; color: var(--navy-900); letter-spacing: 0.05em; text-transform: uppercase; }
+  .meta-hex  { font-size: 11px; color: var(--neutral-500); font-family: var(--font-mono); }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="swatch" style="background:#0C2140;"><span class="label" style="color:#ffffff;">Navy 900</span></div>
+  <div class="swatch" style="background:#163769;"><span class="label" style="color:#ffffff;">Navy 700</span></div>
+  <div class="swatch" style="background:#255da5;"><span class="label" style="color:#ffffff;">Navy 500</span></div>
+  <div class="swatch" style="background:#b4cae6;"><span class="label" style="color:#0C2140;">Navy 200</span></div>
+  <div class="swatch" style="background:#edf4fb;"><span class="label" style="color:#0C2140;">Navy 50</span></div>
+  <div class="swatch" style="background:#BB8956;"><span class="label" style="color:#ffffff;">Gold 600</span></div>
+  <div class="swatch" style="background:#c99970;"><span class="label" style="color:#ffffff;">Gold 500</span></div>
+  <div class="swatch" style="background:#efd9ca;"><span class="label" style="color:#7a4e18;">Gold 200</span></div>
+</div>
+<div class="meta">
+  <div class="meta-item"><span class="meta-name">Brand Navy</span><span class="meta-hex">#0C2140</span></div>
+  <div class="meta-item"><span class="meta-name">Brand Gold</span><span class="meta-hex">#BB8956</span></div>
+  <div class="meta-item"><span class="meta-name">White</span><span class="meta-hex">#FFFFFF</span></div>
+</div>
+</body>
+</html>

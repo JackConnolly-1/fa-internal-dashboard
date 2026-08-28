@@ -1,0 +1,14 @@
+/* ─────────────────────────────────────────────────────────────
+   Frontier Angels — Web Fonts
+   Primary display: Bitter (Google Fonts — slab serif, closest
+   match to the bold slab serif in the "FRONTIER ANGELS" wordmark)
+   Body: Source Sans 3 (Google Fonts — clean, readable sans-serif)
+   Mono: Source Code Pro (Google Fonts)
+
+   ⚠ SUBSTITUTION NOTE: The exact typeface in the logo was not
+   provided as a font file. Bitter (ExtraBold/Bold) is the closest
+   publicly available match. Ask the brand team for the original
+   .ttf/.otf files to replace these Google Fonts imports.
+───────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap');

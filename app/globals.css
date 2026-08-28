@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Font CSS variables (--font-body / --font-display / --font-mono) are provided
+     by next/font via classes on <html> in app/layout.tsx. Do NOT redefine them
+     here — doing so overrides the optimized font names and breaks loading. */
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Design system: never pure black for text — default to navy */
+  body {
+    @apply bg-white text-navy-900 font-sans;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+
+  h4, h5, h6 {
+    @apply font-sans font-semibold;
+  }
+}
+
+@layer components {
+  /* Focus styles for accessibility */
+  .focus-ring {
+    @apply outline-none ring-2 ring-gold-600 ring-offset-2;
+  }
+
+  /* Prose styles for content areas */
+  .prose-fa {
+    @apply text-slate-600 leading-relaxed;
+  }
+
+  .prose-fa h2 {
+    @apply text-2xl font-serif text-navy-800 mt-8 mb-4;
+  }
+
+  .prose-fa h3 {
+    @apply text-xl font-sans font-semibold text-navy-700 mt-6 mb-3;
+  }
+
+  .prose-fa p {
+    @apply mb-4;
+  }
+
+  .prose-fa ul {
+    @apply list-disc list-inside mb-4 space-y-1;
+  }
+
+  /* Section padding utilities */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-fa {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Treemap tiles fade in (staggered via inline animation-delay) */
+@keyframes treemap-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
